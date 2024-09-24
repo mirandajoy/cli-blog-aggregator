@@ -48,6 +48,7 @@ func main() {
 	cmds.register("follow", middlewareLoggedIn(handleFollowFeed))
 	cmds.register("following", middlewareLoggedIn(handleGetFollowFeeds))
 	cmds.register("unfollow", middlewareLoggedIn(handleUnfollowFeed))
+	cmds.register("browse", middlewareLoggedIn(handlerBrowse))
 
 	//handleUnfollowFeed
 
